@@ -1,7 +1,7 @@
 # Configure the Azure Provider
 # <https://www.terraform.io/docs/providers/Getazurerm/index.html>
 provider "azurerm" {
-   features {}
+  features {}
 }
 
 # Azure Remote Backend
@@ -20,8 +20,8 @@ resource "azurerm_resource_group" "rg-ghactions-tf" {
   name     = var.resource_group_name
   location = var.azure_region
   tags = {
-    "OwnerName" = "t.krampe@loginconsultants.de"
-    "Environment" = "Test"
+    "OwnerName"       = "t.krampe@loginconsultants.de"
+    "Environment"     = "Test"
     "ApplicationName" = "TF-GHA-Azure"
   }
 }
@@ -33,3 +33,4 @@ resource "azurerm_virtual_network" "vNet99" {
   location            = "${azurerm_resource_group.rg-ghactions-tf.location}"
   resource_group_name = "${azurerm_resource_group.rg-ghactions-tf.name}"
 }
+
