@@ -25,12 +25,3 @@ resource "azurerm_resource_group" "rg-ghactions-tf" {
     "ApplicationName" = "TF-GHA-Azure"
   }
 }
-
-# Create a virtual network within the resource group
-resource "azurerm_virtual_network" "vNet99" {
-  name                = "vNet99"
-  address_space       = ["10.99.99.0/24"]
-  location            = "${azurerm_resource_group.rg-ghactions-tf.location}"
-  resource_group_name = "${azurerm_resource_group.rg-ghactions-tf.name}"
-}
-
