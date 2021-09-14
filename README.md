@@ -169,6 +169,18 @@ Publish the branch and create a pull request.
 
 You should see the Terraform Plan workflow kick off automatically after a few seconds.
 
+Click on Details and drilldown into the Terraform Plan step to review the execution plan.
+### Apply changes
+If you are satisfied with the Terraform plan, merge the pull request.
+
+Navigate to the Actions tab. You should see the Terraform Apply workflow kick off automatically after the merge.
+
+Drilldown into the Terraform Apply logs to verify that the changes were deployed.
+
+![](images/GitHubActions_003.png)
+
+![](images/GitHubActions_004.png)
+
 
 [1]: https://github.com/github/gitignore/blob/master/Terraform.gitignore
 [2]: https://www.terraform.io/docs/providers/azurerm/guides/service_principal_client_secret.html 
