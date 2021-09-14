@@ -18,7 +18,7 @@ terraform {
 # <https://www.terraform.io/docs/providers/azurerm/r/resource_group.html>
 resource "azurerm_resource_group" "rg-ghactions-tf" {
   name     = var.resource_group_name
-  location = var.azure_region}
+  location = var.azure_region
   tags = {
     "OwnerName" = "t.krampe@loginconsultants.de"
     "Environment" = "Test"
