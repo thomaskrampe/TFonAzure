@@ -8,7 +8,7 @@ Create a new GitHub repo for Terraform configuration files (or use an existing r
 
 If creating a new repository, check the Add .gitignore option and select the Terraform template.
 
-![Create a Repository](/images/GitHubActions_001.png)
+![Create a Repository](images/GitHubActions_001.png)
 
 If using an existing repo, update your `.gitignore` file using the [GitHub’s Terraform .gitignore template][1].
 
