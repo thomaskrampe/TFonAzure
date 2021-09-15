@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+# Ignore lock hcl from local test
+.terraform.lock.hcl
+
 # Crash log files
 crash.log
 
